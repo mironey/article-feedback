@@ -1,0 +1,114 @@
+.wpaf-container {
+    display: flex;
+    justify-content: center;
+    padding: 40px 15px;
+}
+
+.wpaf-card {
+    background: #fff;
+    max-width: 520px;
+    width: 100%;
+    padding: 35px;
+    border-radius: 14px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+    text-align: center;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+.wpaf-title {
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+.wpaf-stars {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.wpaf-stars svg {
+    width: 36px;
+    height: 36px;
+    fill: #ddd;
+    cursor: pointer;
+    transition: transform .2s, fill .2s;
+}
+
+.wpaf-stars svg:hover {
+    transform: scale(1.2);
+}
+
+.wpaf-stars svg.active {
+    fill: #f7b500;
+}
+
+.wpaf-rating-label {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+    height: 18px;
+}
+
+.wpaf-form {
+    display: none;
+    margin-top: 25px;
+    text-align: left;
+}
+
+.wpaf-field {
+    margin-bottom: 18px;
+}
+
+.wpaf-field label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 6px;
+}
+
+.wpaf-field input,
+.wpaf-field textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 8px;
+    border: 1px solid #e3e3e3;
+    background: #fafafa;
+    font-size: 14px;
+    transition: all .25s ease;
+    font-family: inherit;
+}
+
+.wpaf-field textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+.wpaf-field input:focus,
+.wpaf-field textarea:focus {
+    outline: none;
+    border-color: #0073aa;
+    background: #fff;
+    box-shadow: 0 0 0 3px rgba(0,115,170,0.08);
+}
+
+.wpaf-submit-btn {
+    width: 100%;
+    border: none;
+    padding: 13px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #0073aa;
+    color: #fff;
+    transition: all .25s ease;
+}
+
+.wpaf-submit-btn:hover {
+    background: #005f8c;
+    box-shadow: 0 8px 20px rgba(0,115,170,0.25);
+    transform: translateY(-2px);
+}
+

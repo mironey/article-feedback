@@ -11,10 +11,18 @@
  * Requires PHP: 7.4
  * License: GPL V2 or Later
  * License URI:  https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain: wp-article-feedback
+ * Text Domain: article-feedback
  * Domain Path: /languages
  */
 
 if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly.
 }
+
+const AF_VERSION = '1.0';
+define('AF_PATH', plugin_dir_path(__FILE__));
+define('AF_URL', plugin_dir_url(__FILE__));
+
+require_once AF_PATH . 'includes/class-article-feedback.php';
+
+new ArticleFeedback();
