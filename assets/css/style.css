@@ -1,10 +1,10 @@
-.wpaf-container {
+.af-container {
     display: flex;
     justify-content: center;
     padding: 40px 15px;
 }
 
-.wpaf-card {
+.af-card {
     background: #fff;
     max-width: 520px;
     width: 100%;
@@ -15,19 +15,19 @@
     font-family: system-ui, -apple-system, sans-serif;
 }
 
-.wpaf-title {
+.af-title {
     font-size: 22px;
     margin-bottom: 25px;
 }
 
-.wpaf-stars {
+.af-stars {
     display: flex;
     justify-content: center;
     gap: 8px;
     margin-bottom: 10px;
 }
 
-.wpaf-stars svg {
+.af-stars svg {
     width: 36px;
     height: 36px;
     fill: #ddd;
@@ -35,32 +35,32 @@
     transition: transform .2s, fill .2s;
 }
 
-.wpaf-stars svg:hover {
+.af-stars svg:hover {
     transform: scale(1.2);
 }
 
-.wpaf-stars svg.active {
+.af-stars svg.active {
     fill: #f7b500;
 }
 
-.wpaf-rating-label {
+.af-rating-label {
     font-size: 14px;
     color: #666;
     margin-bottom: 20px;
     height: 18px;
 }
 
-.wpaf-form {
+.af-form {
     display: none;
     margin-top: 25px;
     text-align: left;
 }
 
-.wpaf-field {
+.af-field {
     margin-bottom: 18px;
 }
 
-.wpaf-field label {
+.af-field label {
     display: block;
     font-size: 13px;
     font-weight: 600;
@@ -68,8 +68,8 @@
     margin-bottom: 6px;
 }
 
-.wpaf-field input,
-.wpaf-field textarea {
+.af-field input,
+.af-field textarea {
     width: 100%;
     padding: 12px 14px;
     border-radius: 8px;
@@ -80,20 +80,20 @@
     font-family: inherit;
 }
 
-.wpaf-field textarea {
+.af-field textarea {
     min-height: 110px;
     resize: vertical;
 }
 
-.wpaf-field input:focus,
-.wpaf-field textarea:focus {
+.af-field input:focus,
+.af-field textarea:focus {
     outline: none;
     border-color: #0073aa;
     background: #fff;
     box-shadow: 0 0 0 3px rgba(0,115,170,0.08);
 }
 
-.wpaf-submit-btn {
+.af-submit-btn {
     width: 100%;
     border: none;
     padding: 13px;
@@ -106,7 +106,7 @@
     transition: all .25s ease;
 }
 
-.wpaf-submit-btn:hover {
+.af-submit-btn:hover {
     background: #005f8c;
     box-shadow: 0 8px 20px rgba(0,115,170,0.25);
     transform: translateY(-2px);

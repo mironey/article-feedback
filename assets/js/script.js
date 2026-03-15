@@ -10,46 +10,32 @@ jQuery(document).ready(function($){
 
     let rating = 0;
 
-    $('.wpaf-stars svg').on('mouseenter', function(){
-
+    $('.af-stars svg').on('mouseenter', function(){
         const value = $(this).data('value');
-
-        $('.wpaf-stars svg').each(function(){
-
+        $('.af-stars svg').each(function(){
             if($(this).data('value') <= value){
                 $(this).css('fill','#f7b500');
             } else {
                 $(this).css('fill','#ddd');
             }
-
         });
-
     });
 
-    $('.wpaf-stars').on('mouseleave', function(){
-
-        $('.wpaf-stars svg').each(function(){
-
+    $('.af-stars').on('mouseleave', function(){
+        $('.af-stars svg').each(function(){
             if($(this).data('value') <= rating){
                 $(this).css('fill','#f7b500');
             } else {
                 $(this).css('fill','#ddd');
             }
-
         });
-
     });
 
-    $('.wpaf-stars svg').on('click', function(){
-
+    $('.af-stars svg').on('click', function(){
         rating = $(this).data('value');
-
-        $('#wpaf-rating').val(rating);
-
-        $('.wpaf-rating-label').text(labels[rating]);
-
-        $('.wpaf-form').slideDown();
-
+        $('#af-rating').val(rating);
+        $('.af-rating-label').text(labels[rating]);
+        $('.af-form').slideDown();
     });
 
 });

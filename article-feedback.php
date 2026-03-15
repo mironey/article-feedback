@@ -19,9 +19,10 @@ if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly.
 }
 
-const AF_VERSION = '1.0';
+const AF_VERSION = '1.0.0';
 define('AF_PATH', plugin_dir_path(__FILE__));
 define('AF_URL', plugin_dir_url(__FILE__));
+define('AF_TEXT_DOMAIN', 'article-feedback');
 
 require_once AF_PATH . 'includes/class-article-feedback.php';
 
