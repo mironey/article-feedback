@@ -5,10 +5,10 @@ if (!defined('ABSPATH')) {
 
 class AF_Shortcode {
     public function __construct() {
-        add_shortcode(AF_TEXT_DOMAIN, [$this, 'register_shortcodes']);
+        add_shortcode('article-feedback', [$this, 'render_shortcodes']);
     }
 
-    public function register_shortcodes($atts, $content = null) {
+    public function render_shortcodes($atts, $content = null) {
         ob_start();
         ?>
         <div class="af-container">
